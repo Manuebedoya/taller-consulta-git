@@ -76,3 +76,11 @@ Upstream y su diferencia con Origin:
 Definición: origin es el nombre por defecto que le da Git al repositorio remoto de donde clonaste originalmente (tu propia copia o el repositorio principal). upstream se refiere habitualmente al repositorio original o matriz (por ejemplo, el del profesor o la empresa original) desde el cual hiciste un fork, y se usa para sincronizar actualizaciones.
 
 Ejemplo práctico: Si clonas tu propio repositorio en GitHub, origin apunta a tu cuenta. Si trabajas en un proyecto open-source haciendo un fork, configuras upstream apuntando al repositorio del dueño original para jalar sus últimas actualizaciones con git pull upstream main.
+
+5. **La importancia de las ramas (Branches):** ¿Por qué se deben crear ramas en un proyecto de software? Expliquen para qué sirven y qué ventajas ofrecen tanto en el trabajo individual como en equipo.
+5. La importancia de las ramas (Branches)
+¿Por qué se deben crear y qué ventajas ofrecen? Las ramas permiten aislar el trabajo.
+
+En el trabajo individual: Te permiten experimentar con nuevas ideas o corregir errores complejos sin miedo a dañar el código que ya funciona. Si algo sale mal, simplemente borras la rama y tu proyecto principal sigue intacto.
+
+En el trabajo en equipo: Permiten que múltiples desarrolladores trabajen simultáneamente en diferentes características (uno en el login, otro en el perfil, otro en la base de datos) al mismo tiempo y en los mismos archivos sin pisarse el código ni generar conflictos constantes.
