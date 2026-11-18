@@ -84,3 +84,19 @@ Ejemplo práctico: Si clonas tu propio repositorio en GitHub, origin apunta a tu
 En el trabajo individual: Te permiten experimentar con nuevas ideas o corregir errores complejos sin miedo a dañar el código que ya funciona. Si algo sale mal, simplemente borras la rama y tu proyecto principal sigue intacto.
 
 En el trabajo en equipo: Permiten que múltiples desarrolladores trabajen simultáneamente en diferentes características (uno en el login, otro en el perfil, otro en la base de datos) al mismo tiempo y en los mismos archivos sin pisarse el código ni generar conflictos constantes.
+
+6. **¿Qué es GitFlow?** Expliquen brevemente la estructura de sus ramas principales (`master`, `develop`, `feature`, `release`, `hotfix`).
+6. ¿Qué es GitFlow y la estructura de sus ramas principales?
+¿Qué es?: GitFlow es un modelo de flujo de trabajo estándar basado en ramas que define una estructura estricta sobre cómo y cuándo se crean las ramas para gestionar el desarrollo, las pruebas y los despliegues a producción de manera organizada.
+
+Estructura de sus ramas principales:
+
+master (o main): Contiene el código oficial listo para producción. Cada cambio aquí representa una versión liberada a los usuarios reales.
+
+develop: Es la rama de integración. Aquí se acumulan las nuevas características listas para el próximo lanzamiento y sirve de base para armar las versiones.
+
+feature: Ramas temporales que nacen de develop y sirven para desarrollar una funcionalidad específica (ej. feature/catalogo). Al terminar, se fusionan de regreso a develop.
+
+release: Ramas que nacen de develop cuando se prepara una nueva versión para producción. Permiten hacer pruebas finales, corrección de pequeños bugs de última hora y empaquetado antes de pasar a master.
+
+hotfix: Ramas de emergencia que nacen directamente de master para solucionar un error crítico en producción de forma urgente, y luego se fusionan tanto en master como en develop.
